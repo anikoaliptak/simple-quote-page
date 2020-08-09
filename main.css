@@ -8,7 +8,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 100%;
   line-height: 1.5;
 }
 
@@ -21,12 +20,12 @@ body {
 }
 
 .wrapper {
-  padding-top: 4rem;
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   text-align: center;
 }
 
+/* === TEXT STYLES DIFFERENT SCREEN === */
 .quote {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 2.5rem;
@@ -37,3 +36,51 @@ body {
   font-size: 1.5rem;
   font-style: italic;
 }
+@media (max-width: 767px) {
+  .wrapper {
+    padding-top: 5rem;
+  } 
+  .quote {
+     font-size: 1rem;
+}
+  .author {
+    font-size: .75rem
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-top: 5rem;
+  }
+  .quote {
+    font-size: 1.5rem;
+}
+  .aurhor {
+    font-size: 1rem;
+  }  
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding-top: 5.5rem;
+  }
+  .quote {
+    font-size: 2rem;
+  }
+  .author {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper {
+    padding-top: 8rem;
+  }
+  .quote {
+    font-size: 6.5rem;
+  }
+  .author {
+    font-size: 2.5rem;
+  }
+}
+
